@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Guitar - Auction Details</title>
+    <link rel="stylesheet" href="AUCTION.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        
+        .product-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .product-container img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 300px; 
+        }
+
+        .product-details {
+            flex: 1;
+        }
+
+        .bid-form {
+            margin-top: 20px;
+        }
+
+        .bid-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .bid-form input[type="text"] {
+            width: 25%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 1em;
+        }
+
+        .bid-form button {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .bid-form button:hover {
+            background: #e8491d;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #35424a;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Vintage Guitar - Auction Details</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse_auction.html">Browse Auctions</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="product-container">
+            <img src="https://d1d6c8hqh78dt7.cloudfront.net/wysiwyg/IMG_3795_1.jpg" alt="Vintage Guitar">
+            <div class="product-details">
+                <h2>Vintage Guitar</h2>
+                <p><strong>Description:</strong> A classic vintage guitar from the 1960s, known for its impeccable sound and craftsmanship. Perfect for collectors and musicians alike.</p>
+                <p><strong>Current Bid:</strong> $3,500</p>
+                <p><strong>Ends:</strong> Jan 10, 2025</p>
+
+                <div class="bid-form">
+                    <h3>Place Your Bid</h3>
+                    <form action="#" method="post">
+                        <label for="bid-amount">Your Bid Amount:</label>
+                        <input type="text" id="bid-amount" name="bid-amount" required>
+                        <button type="submit">Submit Bid</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Professional Auction Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>
